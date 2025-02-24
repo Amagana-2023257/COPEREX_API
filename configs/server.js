@@ -7,6 +7,7 @@ import morgan from "morgan";
 import { dbConnection } from "./mongo.js";
 import apiLimiter from "../src/middlewares/rate-limit-validator.js";
 import authRoutes from "../src/auth/auth.routes.js";
+import companyRoutes from "../src/company/company.routes.js";
 import { swaggerDocs, swaggerUi } from "./swagger.js";
 import { createAdminUser } from "../src/auth/auth.controller.js"; 
 
@@ -21,6 +22,7 @@ const middlewares = (app) => {
 
 const routes = (app) => {
     app.use("/coperex/v1/auth", authRoutes);
+    app.use("/coperex/v1/company", companyRoutes);
     app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(swaggerDocs));
 };
 

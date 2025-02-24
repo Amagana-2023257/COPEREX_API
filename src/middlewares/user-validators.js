@@ -28,13 +28,6 @@ export const registerValidator = [
 ];
 
 export const loginValidator = [
-  // Verifica que se envíe al menos email o username
-  body().custom((_, { req }) => {
-    if (!req.body.email && !req.body.username) {
-      throw new Error("Se requiere email o username para iniciar sesión");
-    }
-    return true;
-  }),
 
   body("email")
     .optional()

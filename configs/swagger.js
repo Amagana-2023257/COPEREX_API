@@ -7,7 +7,7 @@ const swaggerOptions = {
         info:{
             title: "coperex API",
             version:"1.0.0",
-            description: "API de gestor de empresas para coperex",
+            description: "API de gestor de api coperex",
             contact:{
                 name: "Angel Magaña",
                 email: "amagana-2023257@kinal.edu.gt"
@@ -20,6 +20,8 @@ const swaggerOptions = {
         ]
     },
     apis:[
+        "./src/auth/*.js",
+        "./src/user/*.js",
     ]
 }
 

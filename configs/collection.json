@@ -1,0 +1,241 @@
+{
+    "info": {
+      "name": "COPEREX - API",
+      "_postman_id": "xxxxxx-xxxxxx-xxxxxx",
+      "description": "API para gestión de empresas en la feria Interfer",
+      "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+    },
+    "item": [
+      {
+        "name": "Auth",
+        "item": [
+          {
+            "name": "Registrar un nuevo usuario",
+            "request": {
+              "method": "POST",
+              "header": [],
+              "body": {
+                "mode": "formdata",
+                "formdata": [
+                  {
+                    "key": "name",
+                    "value": "Admin",
+                    "type": "text"
+                  },
+                  {
+                    "key": "username",
+                    "value": "admin",
+                    "type": "text"
+                  },
+                  {
+                    "key": "email",
+                    "value": "admin@coperex.com",
+                    "type": "text"
+                  },
+                  {
+                    "key": "password",
+                    "value": "admin123",
+                    "type": "text"
+                  },
+                  {
+                    "key": "profilePicture",
+                    "type": "file",
+                    "src": "path_to_file.jpg"
+                  }
+                ]
+              },
+              "url": {
+                "raw": "http://localhost:3000/auth/register",
+                "protocol": "http",
+                "host": [
+                  "localhost"
+                ],
+                "port": "3000",
+                "path": [
+                  "auth",
+                  "register"
+                ]
+              }
+            },
+            "response": []
+          },
+          {
+            "name": "Iniciar sesión",
+            "request": {
+              "method": "POST",
+              "header": [],
+              "body": {
+                "mode": "raw",
+                "raw": "{\n  \"email\": \"admin@coperex.com\",\n  \"username\": \"admin\",\n  \"password\": \"admin123\"\n}"
+              },
+              "url": {
+                "raw": "http://localhost:3000/auth/login",
+                "protocol": "http",
+                "host": [
+                  "localhost"
+                ],
+                "port": "3000",
+                "path": [
+                  "auth",
+                  "login"
+                ]
+              }
+            },
+            "response": []
+          }
+        ]
+      },
+      {
+        "name": "Companies",
+        "item": [
+          {
+            "name": "Registrar una nueva empresa",
+            "request": {
+              "method": "POST",
+              "header": [
+                {
+                  "key": "Authorization",
+                  "value": "Bearer {{access_token}}",
+                  "type": "text"
+                }
+              ],
+              "body": {
+                "mode": "raw",
+                "raw": "{\n  \"name\": \"TechCorp\",\n  \"impactLevel\": \"Alto\",\n  \"yearsOfExperience\": 10,\n  \"category\": \"Tecnología\"\n}"
+              },
+              "url": {
+                "raw": "http://localhost:3000/companies",
+                "protocol": "http",
+                "host": [
+                  "localhost"
+                ],
+                "port": "3000",
+                "path": [
+                  "companies"
+                ]
+              }
+            },
+            "response": []
+          },
+          {
+            "name": "Obtener todas las empresas",
+            "request": {
+              "method": "GET",
+              "header": [
+                {
+                  "key": "Authorization",
+                  "value": "Bearer {{access_token}}",
+                  "type": "text"
+                }
+              ],
+              "url": {
+                "raw": "http://localhost:3000/companies?filter={\"category\":\"Tecnología\"}&sort=yearsOfExperience",
+                "protocol": "http",
+                "host": [
+                  "localhost"
+                ],
+                "port": "3000",
+                "path": [
+                  "companies"
+                ],
+                "query": [
+                  {
+                    "key": "filter",
+                    "value": "{\"category\":\"Tecnología\"}"
+                  },
+                  {
+                    "key": "sort",
+                    "value": "yearsOfExperience"
+                  }
+                ]
+              }
+            },
+            "response": []
+          },
+          {
+            "name": "Obtener empresa por ID",
+            "request": {
+              "method": "GET",
+              "header": [
+                {
+                  "key": "Authorization",
+                  "value": "Bearer {{access_token}}",
+                  "type": "text"
+                }
+              ],
+              "url": {
+                "raw": "http://localhost:3000/companies/{{companyId}}",
+                "protocol": "http",
+                "host": [
+                  "localhost"
+                ],
+                "port": "3000",
+                "path": [
+                  "companies",
+                  "{{companyId}}"
+                ]
+              }
+            },
+            "response": []
+          },
+          {
+            "name": "Actualizar empresa",
+            "request": {
+              "method": "PUT",
+              "header": [
+                {
+                  "key": "Authorization",
+                  "value": "Bearer {{access_token}}",
+                  "type": "text"
+                }
+              ],
+              "body": {
+                "mode": "raw",
+                "raw": "{\n  \"name\": \"TechCorp\",\n  \"impactLevel\": \"Muy Alto\",\n  \"yearsOfExperience\": 12,\n  \"category\": \"Tecnología\"\n}"
+              },
+              "url": {
+                "raw": "http://localhost:3000/companies/{{companyId}}",
+                "protocol": "http",
+                "host": [
+                  "localhost"
+                ],
+                "port": "3000",
+                "path": [
+                  "companies",
+                  "{{companyId}}"
+                ]
+              }
+            },
+            "response": []
+          },
+          {
+            "name": "Generar reporte en Excel",
+            "request": {
+              "method": "GET",
+              "header": [
+                {
+                  "key": "Authorization",
+                  "value": "Bearer {{access_token}}",
+                  "type": "text"
+                }
+              ],
+              "url": {
+                "raw": "http://localhost:3000/companies/report",
+                "protocol": "http",
+                "host": [
+                  "localhost"
+                ],
+                "port": "3000",
+                "path": [
+                  "companies",
+                  "report"
+                ]
+              }
+            },
+            "response": []
+          }
+        ]
+      }
+    ]
+  }
+  
