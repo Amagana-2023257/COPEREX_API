@@ -19,6 +19,21 @@ const router = Router();
  *   description: Operaciones de gestión de empresas
  */
 
+
+/**
+ * @swagger
+ * /companies/report:
+ *   get:
+ *     summary: Generar un reporte en Excel con todas las empresas
+ *     tags: [Companies]
+ *     responses:
+ *       200:
+ *         description: Reporte generado exitosamente
+ *       500:
+ *         description: Error en la generación del reporte
+ */
+router.get('/companies/report', validateJWT, hasRoles("ADMIN"), generateExcelReport);
+
 /**
  * @swagger
  * /companies:
@@ -148,18 +163,6 @@ router.get('/companies/:companyId', validateJWT, hasRoles("ADMIN"), getCompanyBy
  */
 router.put('/companies/:companyId', validateJWT, hasRoles("ADMIN"), updateCompany);
 
-/**
- * @swagger
- * /companies/report:
- *   get:
- *     summary: Generar un reporte en Excel con todas las empresas
- *     tags: [Companies]
- *     responses:
- *       200:
- *         description: Reporte generado exitosamente
- *       500:
- *         description: Error en la generación del reporte
- */
-router.get('/companies/report', validateJWT, hasRoles("ADMIN"), generateExcelReport);
+
 
 export default router;

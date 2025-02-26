@@ -1,0 +1,225 @@
+{
+	"info": {
+		"_postman_id": "fe68e07e-0a13-4d36-8a36-2af3c1591125",
+		"name": "COPEREX - API",
+		"description": "API para gestión de empresas en la feria Interfer",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "31878676"
+	},
+	"item": [
+		{
+			"name": "Auth",
+			"item": [
+				{
+					"name": "Registrar un nuevo usuario",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2JkZGJhMTAyMTU5Nzg4ZDgwNTk1MWQiLCJpYXQiOjE3NDA1ODEyMTgsImV4cCI6MTc0MDU4NDgxOH0.GsHhzwf99h9lf7Awmt1iO8N1eYQ0djQnj-C4x0pRrw4"
+							}
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "Angel",
+									"type": "text"
+								},
+								{
+									"key": "username",
+									"value": "magaña",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "admin@coperex.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "admin123",
+									"type": "text"
+								},
+								{
+									"key": "profilePicture",
+									"type": "file",
+									"src": "path_to_file.jpg"
+								}
+							]
+						},
+						"url": "http://localhost:3000/coperex/v1/auth/register"
+					},
+					"response": []
+				},
+				{
+					"name": "inicia",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"email\": \"admin@example.com\",\r\n  \"password\": \"SuperSecret123\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:3000/coperex/v1/auth/login"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Companies",
+			"item": [
+				{
+					"name": "Obtener todas las empresas",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2JkZGJhMTAyMTU5Nzg4ZDgwNTk1MWQiLCJpYXQiOjE3NDA1ODEyMTgsImV4cCI6MTc0MDU4NDgxOH0.GsHhzwf99h9lf7Awmt1iO8N1eYQ0djQnj-C4x0pRrw4"
+							}
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{access_token}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3000/coperex/v1/company/companies?filter={\"category\":\"AAAA\"}",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"coperex",
+								"v1",
+								"company",
+								"companies"
+							],
+							"query": [
+								{
+									"key": "filter",
+									"value": "{\"category\":\"AAAA\"}"
+								},
+								{
+									"key": "sort",
+									"value": "-name",
+									"disabled": true
+								},
+								{
+									"key": "sort",
+									"value": "impactLevel",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Obtener empresa por ID",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2JkZGJhMTAyMTU5Nzg4ZDgwNTk1MWQiLCJpYXQiOjE3NDA1ODEyMTgsImV4cCI6MTc0MDU4NDgxOH0.GsHhzwf99h9lf7Awmt1iO8N1eYQ0djQnj-C4x0pRrw4"
+							}
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{access_token}}",
+								"type": "text"
+							}
+						],
+						"url": "http://localhost:3000/coperex/v1/company/companies/67bea0b7faae41fd6039ed38"
+					},
+					"response": []
+				},
+				{
+					"name": "Actualizar empresa",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2JkZGJhMTAyMTU5Nzg4ZDgwNTk1MWQiLCJpYXQiOjE3NDA1ODEyMTgsImV4cCI6MTc0MDU4NDgxOH0.GsHhzwf99h9lf7Awmt1iO8N1eYQ0djQnj-C4x0pRrw4"
+							}
+						},
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{access_token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"name\": \"TechCorp\",\n  \"impactLevel\": \"Muy Alto\",\n  \"yearsOfExperience\": 12,\n  \"category\": \"Tecnología\"\n}"
+						},
+						"url": "http://localhost:3000/coperex/v1/company/companies/67bea0b7faae41fd6039ed38"
+					},
+					"response": []
+				},
+				{
+					"name": "Register",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2JkZGJhMTAyMTU5Nzg4ZDgwNTk1MWQiLCJpYXQiOjE3NDA1NDYyMjMsImV4cCI6MTc0MDU0OTgyM30.U9cIcOfw-DtXanfQW8zQLKEDaAI-hM8oTccDgk4OCU4"
+							}
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"EEEE\",\r\n  \"impactLevel\": \"Bajo\",\r\n  \"yearsOfExperience\": 1999,\r\n  \"category\": \"EEE\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:3000/coperex/v1/company/companies"
+					},
+					"response": []
+				},
+				{
+					"name": "report",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2JkZGJhMTAyMTU5Nzg4ZDgwNTk1MWQiLCJpYXQiOjE3NDA1NDYyMjMsImV4cCI6MTc0MDU0OTgyM30.U9cIcOfw-DtXanfQW8zQLKEDaAI-hM8oTccDgk4OCU4"
+							}
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{access_token}}",
+								"type": "text"
+							}
+						],
+						"url": "http://localhost:3000/coperex/v1/company/companies/report"
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
