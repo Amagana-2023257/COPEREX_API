@@ -1,114 +1,76 @@
 # Laboratorio #3 - API de Gestión de Empresas en la Feria "Interfer"
-Descripción
-Este proyecto consiste en el desarrollo de una API backend utilizando Node.js, Express y MongoDB para gestionar la incorporación de nuevas empresas y socios a la feria "Interfer" de la empresa COPEREX. La API permitirá a los administradores registrar, visualizar, editar y generar reportes de las empresas participantes.
 
-# Requisitos
-## Autenticación y Seguridad:
+## Descripción
 
-La API debe tener un sistema de autenticación para administradores.
-JWT o sesiones deben ser utilizadas para gestionar la autenticación.
-Se debe aplicar todas las medidas de seguridad vistas durante el bimestre.
-Registro de Empresas:
+Este proyecto consiste en el desarrollo de una API backend utilizando **Node.js**, **Express** y **MongoDB** para gestionar la incorporación de nuevas empresas y socios a la feria "**Interfer**" de la empresa **COPEREX**. La API permitirá a los administradores registrar, visualizar, editar y generar reportes de las empresas participantes.
+
+## Requisitos
+
+### Autenticación y Seguridad
+
+- La API debe contar con un sistema de autenticación para administradores.
+- Se utilizarán **JWT** (o sesiones) para gestionar la autenticación.
+- Se aplicarán todas las medidas de seguridad vistas durante el bimestre.
+
+### Registro de Empresas
+
 Los administradores podrán registrar empresas proporcionando:
 
-# Nivel de impacto
-Años de trayectoria
-Categoría empresarial
-(Campos adicionales pueden ser añadidos si es necesario)
-Visualización de Empresas:
+- **Nombre de la empresa**
+- **Nivel de impacto:** (Alto, Medio, Bajo)
+- **Años de trayectoria:** Se registra el año de fundación de la empresa.
+- **Categoría empresarial:** Por ejemplo, Agricultura, Finanzas, Construcción, Distribución, Energía, Salud, Alimentos, Manufactura, Retail, Bebidas, Medios, Seguros, Telecomunicaciones, Diversos, Logística, Industrial, Construcción/Inmobiliaria, etc.
+
+*(Se podrán añadir campos adicionales si es necesario.)*
+
+### Visualización de Empresas
+
 Los administradores podrán:
 
-Visualizar un listado completo de empresas registradas.
-Filtrar y ordenar la información por:
-Años de trayectoria
-Categoría empresarial
-Orden alfabético (A-Z, Z-A)
-Editar la información de las empresas (sin opción para eliminarlas).
-Generación de Reportes:
+- Visualizar un listado completo de empresas registradas.
+- Filtrar y ordenar la información por:
+  - **Años de trayectoria:** Año de fundación.
+  - **Categoría empresarial**
+  - **Orden alfabético:** (A-Z, Z-A)
+  - **Orden por nivel de impacto:** (de Bajo a Alto o de Alto a Bajo)
+- Editar la información de las empresas (sin opción para eliminarlas).
+
+### Generación de Reportes
 
 El sistema debe generar un reporte en formato Excel con todos los datos de las empresas registradas, para facilitar el análisis y la toma de decisiones estratégicas.
-Tecnologías Utilizadas
-Node.js: Entorno de ejecución para JavaScript.
-Express: Framework para construir la API.
-MongoDB: Base de datos NoSQL para almacenar la información de las empresas.
-JWT: Para la autenticación de los administradores.
-Mongoose: ODM para interactuar con MongoDB de manera más sencilla.
-ExcelJS: Librería para generar los reportes en formato Excel.
-Instalación
 
-# Clona este repositorio:
+## Tecnologías Utilizadas
 
-## bash
-Copiar
+- **Node.js:** Entorno de ejecución para JavaScript.
+- **Express:** Framework para construir la API.
+- **MongoDB:** Base de datos NoSQL para almacenar la información de las empresas.
+- **JWT:** Para la autenticación de los administradores.
+- **Mongoose:** ODM para interactuar con MongoDB de manera más sencilla.
+- **ExcelJS:** Librería para generar los reportes en formato Excel.
+
+## Instalación
+
+### Clona este repositorio
+
 ```bash
 git clone https://github.com/tu_usuario/laboratorio-3.git
 ```
-# Accede a la carpeta del proyecto:
 
-## bash
-Copiar
-```bash
-cd laboratorio-3
-```
+## Obtener todas las empresas o generar reporte (PARAMS)
 
-# Instala las dependencias:
-## bash
-Copiar
-```bash
-npm i
-```
-# Configura las variables de entorno en un archivo .env:
+- **Ordenar:** key: "sort" 
+- A-Z "name" 
+- Z-A "-name" 
+- Bajo-Alto "-impactLevel"
+- Alto-Bajo "impactLevel"
 
-## env
-Copiar
-```bash
-DB_URI=mongodb://localhost:27017/interfer
-JWT_SECRET=tu_secreto_aqui
-```
-# Endpoints
-1. POST /login
-Descripción: Autenticación del administrador.
-Requiere: Credenciales del administrador.
-Respuesta: Token JWT.
-2. POST /register
-Descripción: Registrar una nueva empresa.
-Requiere: Datos de la empresa (nombre, nivel de impacto, años de trayectoria, categoría).
-Respuesta: Datos de la empresa registrada.
-3. GET /companies
-Descripción: Obtener el listado de todas las empresas registradas.
-Requiere: Token JWT válido.
-Respuesta: Lista de empresas.
-4. GET /companies/:id
-Descripción: Obtener los detalles de una empresa específica.
-Requiere: Token JWT válido y el ID de la empresa.
-Respuesta: Datos de la empresa solicitada.
-5. PUT /companies/:id
-Descripción: Editar la información de una empresa.
-Requiere: Token JWT válido y el ID de la empresa.
-Respuesta: Datos actualizados de la empresa.
-6. GET /report
-Descripción: Generar un reporte en formato Excel con la información de todas las empresas.
-Requiere: Token JWT válido.
-Respuesta: Archivo Excel descargable.
-Seguridad
-La autenticación se gestiona mediante JWT.
-Se recomienda utilizar HTTPS en producción.
-Validación de datos y medidas de seguridad de base de datos implementadas.
-Ejecución
-Para ejecutar la API en tu entorno local, usa el siguiente comando:
+- **filtrar:** key: "filter" 
+- {"category":"NombreCategoria"}
 
-bash
-Copiar
-npm start
-La API estará disponible en el puerto 3000 por defecto.
+- {"name":"NombreEmpresa"}
 
-# Contribuciones
-Las contribuciones son bienvenidas. Si deseas contribuir a este proyecto, por favor sigue estos pasos:
+- {"impactLevel":"nivel_Alto,Medio,Bajo"}
 
-Realiza un fork de este repositorio.
-Crea una rama para tu característica (git checkout -b feature/nueva-caracteristica).
-Realiza tus cambios y haz commit de ellos (git commit -am 'Añadir nueva característica').
-Haz push a tu rama (git push origin feature/nueva-caracteristica).
-Abre un pull request.
-Licencia
-Este proyecto está bajo la licencia MIT. Consulta el archivo LICENSE para más detalles.
+## El reporte se obtiene en postman 
+
+regresa un acrhivo en binario y se tiene que guardar la respuesta en file en postman al lado izquiero hay 3 puntos dar alli y darle a save response to file y se selecciona la ruta

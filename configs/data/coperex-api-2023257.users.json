@@ -1,0 +1,57 @@
+[{
+  "_id": {
+    "$oid": "67bddba102159788d805951d"
+  },
+  "name": "Administrador",
+  "username": "admin",
+  "email": "admin@example.com",
+  "password": "$argon2id$v=19$m=65536,t=3,p=4$rIFBiNJSR+fEyDmRHDw8Mw$UBwsh4Dyptdi+bCom11Ll50PMtk2sY7ejOJTF4Etsg0",
+  "profilePicture": null,
+  "role": "ADMIN",
+  "status": true,
+  "createdAt": {
+    "$date": "2025-02-25T15:02:57.595Z"
+  },
+  "updatedAt": {
+    "$date": "2025-02-25T15:02:57.595Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67bf304ba256b652dbd0c747"
+  },
+  "name": "Angel",
+  "username": "magaña",
+  "email": "admin@coperex.com",
+  "password": "$argon2id$v=19$m=65536,t=3,p=4$smgS90YNjdpjDzYH8YarkQ$u1BfhdRgIjagV9GffNWMZACvm1AtWDjFCWmE5966xao",
+  "profilePicture": null,
+  "role": "ADMIN",
+  "status": true,
+  "createdAt": {
+    "$date": "2025-02-26T15:16:27.849Z"
+  },
+  "updatedAt": {
+    "$date": "2025-02-26T15:16:27.849Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67c2827abfd9027bf7ecabce"
+  },
+  "name": "Angeltest",
+  "username": "magañatet",
+  "email": "admintest@coperex.com",
+  "password": "$argon2id$v=19$m=65536,t=3,p=4$EfzycE0ASpwbd6JcXVgaOg$AAPRXkEiQQcEq4sAt4UMLASBn99LHJETpnO8A2zP/Ao",
+  "profilePicture": null,
+  "role": "ADMIN",
+  "status": true,
+  "createdAt": {
+    "$date": "2025-03-01T03:43:54.706Z"
+  },
+  "updatedAt": {
+    "$date": "2025-03-01T03:43:54.706Z"
+  },
+  "__v": 0
+}]

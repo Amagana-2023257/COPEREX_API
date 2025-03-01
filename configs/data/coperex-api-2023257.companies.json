@@ -1,0 +1,510 @@
+[{
+  "_id": {
+    "$oid": "67c2859cbfd9027bf7ecabff"
+  },
+  "name": "Agro Ferretera San Juan",
+  "impactLevel": "Medio",
+  "yearsOfExperience": 1985,
+  "category": "Agricultura",
+  "status": true,
+  "createdAt": {
+    "$date": "2025-03-01T03:57:16.751Z"
+  },
+  "updatedAt": {
+    "$date": "2025-03-01T03:57:16.751Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67c285a9bfd9027bf7ecac03"
+  },
+  "name": "Banco Industrial",
+  "impactLevel": "Alto",
+  "yearsOfExperience": 1960,
+  "category": "Finanzas",
+  "status": true,
+  "createdAt": {
+    "$date": "2025-03-01T03:57:29.053Z"
+  },
+  "updatedAt": {
+    "$date": "2025-03-01T03:57:29.053Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67c285b2bfd9027bf7ecac07"
+  },
+  "name": "Cementos Progreso",
+  "impactLevel": "Alto",
+  "yearsOfExperience": 1975,
+  "category": "Construcción",
+  "status": true,
+  "createdAt": {
+    "$date": "2025-03-01T03:57:38.014Z"
+  },
+  "updatedAt": {
+    "$date": "2025-03-01T03:57:38.014Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67c285babfd9027bf7ecac0b"
+  },
+  "name": "Distribuidora Davinsa",
+  "impactLevel": "Medio",
+  "yearsOfExperience": 1980,
+  "category": "Distribución",
+  "status": true,
+  "createdAt": {
+    "$date": "2025-03-01T03:57:46.064Z"
+  },
+  "updatedAt": {
+    "$date": "2025-03-01T03:57:46.064Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67c285c3bfd9027bf7ecac0f"
+  },
+  "name": "Empresa Eléctrica de Guatemala",
+  "impactLevel": "Alto",
+  "yearsOfExperience": 1970,
+  "category": "Energía",
+  "status": true,
+  "createdAt": {
+    "$date": "2025-03-01T03:57:55.566Z"
+  },
+  "updatedAt": {
+    "$date": "2025-03-01T03:57:55.566Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67c285cbbfd9027bf7ecac13"
+  },
+  "name": "Farmacias Cruz Azul",
+  "impactLevel": "Medio",
+  "yearsOfExperience": 1990,
+  "category": "Salud",
+  "status": true,
+  "createdAt": {
+    "$date": "2025-03-01T03:58:03.817Z"
+  },
+  "updatedAt": {
+    "$date": "2025-03-01T03:58:03.817Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67c285d3bfd9027bf7ecac17"
+  },
+  "name": "Grupo G&T Continental",
+  "impactLevel": "Alto",
+  "yearsOfExperience": 1968,
+  "category": "Finanzas",
+  "status": true,
+  "createdAt": {
+    "$date": "2025-03-01T03:58:11.103Z"
+  },
+  "updatedAt": {
+    "$date": "2025-03-01T03:58:11.103Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67c285d9bfd9027bf7ecac1b"
+  },
+  "name": "Helados Helvex",
+  "impactLevel": "Bajo",
+  "yearsOfExperience": 1991,
+  "category": "Alimentos",
+  "status": true,
+  "createdAt": {
+    "$date": "2025-03-01T03:58:17.968Z"
+  },
+  "updatedAt": {
+    "$date": "2025-03-01T03:58:17.968Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67c285e0bfd9027bf7ecac1f"
+  },
+  "name": "Industria Impex",
+  "impactLevel": "Medio",
+  "yearsOfExperience": 1987,
+  "category": "Manufactura",
+  "status": true,
+  "createdAt": {
+    "$date": "2025-03-01T03:58:24.215Z"
+  },
+  "updatedAt": {
+    "$date": "2025-03-01T03:58:24.215Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67c285e6bfd9027bf7ecac23"
+  },
+  "name": "Joyerías La Modernista",
+  "impactLevel": "Bajo",
+  "yearsOfExperience": 1992,
+  "category": "Retail",
+  "status": true,
+  "createdAt": {
+    "$date": "2025-03-01T03:58:30.748Z"
+  },
+  "updatedAt": {
+    "$date": "2025-03-01T03:58:30.748Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67c285edbfd9027bf7ecac27"
+  },
+  "name": "Kola Real Guatemala",
+  "impactLevel": "Medio",
+  "yearsOfExperience": 1980,
+  "category": "Bebidas",
+  "status": true,
+  "createdAt": {
+    "$date": "2025-03-01T03:58:38.020Z"
+  },
+  "updatedAt": {
+    "$date": "2025-03-01T03:58:38.020Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67c285f5bfd9027bf7ecac2b"
+  },
+  "name": "Lácteos Dos Pinos",
+  "impactLevel": "Alto",
+  "yearsOfExperience": 1978,
+  "category": "Alimentos",
+  "status": true,
+  "createdAt": {
+    "$date": "2025-03-01T03:58:45.203Z"
+  },
+  "updatedAt": {
+    "$date": "2025-03-01T03:58:45.203Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67c285fcbfd9027bf7ecac2f"
+  },
+  "name": "Multinacionales Maderera",
+  "impactLevel": "Alto",
+  "yearsOfExperience": 1965,
+  "category": "Construcción",
+  "status": true,
+  "createdAt": {
+    "$date": "2025-03-01T03:58:52.418Z"
+  },
+  "updatedAt": {
+    "$date": "2025-03-01T03:58:52.418Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67c28603bfd9027bf7ecac33"
+  },
+  "name": "Navegación Náutica Guatemala",
+  "impactLevel": "Bajo",
+  "yearsOfExperience": 1990,
+  "category": "Transporte",
+  "status": true,
+  "createdAt": {
+    "$date": "2025-03-01T03:58:59.817Z"
+  },
+  "updatedAt": {
+    "$date": "2025-03-01T03:58:59.817Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67c2860abfd9027bf7ecac37"
+  },
+  "name": "Organización Optimus",
+  "impactLevel": "Medio",
+  "yearsOfExperience": 1982,
+  "category": "Consultoría",
+  "status": true,
+  "createdAt": {
+    "$date": "2025-03-01T03:59:06.482Z"
+  },
+  "updatedAt": {
+    "$date": "2025-03-01T03:59:06.482Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67c28611bfd9027bf7ecac3b"
+  },
+  "name": "Pollo Campero",
+  "impactLevel": "Alto",
+  "yearsOfExperience": 1974,
+  "category": "Alimentos",
+  "status": true,
+  "createdAt": {
+    "$date": "2025-03-01T03:59:13.819Z"
+  },
+  "updatedAt": {
+    "$date": "2025-03-01T03:59:13.819Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67c2861bbfd9027bf7ecac3f"
+  },
+  "name": "Química Quesos",
+  "impactLevel": "Bajo",
+  "yearsOfExperience": 1990,
+  "category": "Alimentos",
+  "status": true,
+  "createdAt": {
+    "$date": "2025-03-01T03:59:23.020Z"
+  },
+  "updatedAt": {
+    "$date": "2025-03-01T03:59:23.020Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67c28622bfd9027bf7ecac43"
+  },
+  "name": "Radio Televisión de Guatemala",
+  "impactLevel": "Alto",
+  "yearsOfExperience": 1970,
+  "category": "Medios",
+  "status": true,
+  "createdAt": {
+    "$date": "2025-03-01T03:59:30.018Z"
+  },
+  "updatedAt": {
+    "$date": "2025-03-01T03:59:30.018Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67c28628bfd9027bf7ecac47"
+  },
+  "name": "Seguros Santafé",
+  "impactLevel": "Medio",
+  "yearsOfExperience": 1983,
+  "category": "Seguros",
+  "status": true,
+  "createdAt": {
+    "$date": "2025-03-01T03:59:36.978Z"
+  },
+  "updatedAt": {
+    "$date": "2025-03-01T03:59:36.978Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67c28632bfd9027bf7ecac4b"
+  },
+  "name": "Telecom Tigo Guatemala",
+  "impactLevel": "Alto",
+  "yearsOfExperience": 1985,
+  "category": "Telecomunicaciones",
+  "status": true,
+  "createdAt": {
+    "$date": "2025-03-01T03:59:46.813Z"
+  },
+  "updatedAt": {
+    "$date": "2025-03-01T03:59:46.813Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67c2863bbfd9027bf7ecac4f"
+  },
+  "name": "Universo Retail",
+  "impactLevel": "Medio",
+  "yearsOfExperience": 1990,
+  "category": "Retail",
+  "status": true,
+  "createdAt": {
+    "$date": "2025-03-01T03:59:55.443Z"
+  },
+  "updatedAt": {
+    "$date": "2025-03-01T03:59:55.443Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67c28647bfd9027bf7ecac53"
+  },
+  "name": "Vivero Verde",
+  "impactLevel": "Bajo",
+  "yearsOfExperience": 1992,
+  "category": "Agricultura",
+  "status": true,
+  "createdAt": {
+    "$date": "2025-03-01T04:00:07.082Z"
+  },
+  "updatedAt": {
+    "$date": "2025-03-01T04:00:07.082Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67c28664bfd9027bf7ecac57"
+  },
+  "name": "Wiese Group",
+  "impactLevel": "Alto",
+  "yearsOfExperience": 1972,
+  "category": "Diversos",
+  "status": true,
+  "createdAt": {
+    "$date": "2025-03-01T04:00:36.060Z"
+  },
+  "updatedAt": {
+    "$date": "2025-03-01T04:00:36.060Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67c2866bbfd9027bf7ecac5b"
+  },
+  "name": "Xport Logistics",
+  "impactLevel": "Medio",
+  "yearsOfExperience": 1988,
+  "category": "Logística",
+  "status": true,
+  "createdAt": {
+    "$date": "2025-03-01T04:00:43.109Z"
+  },
+  "updatedAt": {
+    "$date": "2025-03-01T04:00:43.109Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67c28674bfd9027bf7ecac5f"
+  },
+  "name": "Yummy Foods",
+  "impactLevel": "Bajo",
+  "yearsOfExperience": 1991,
+  "category": "Alimentos",
+  "status": true,
+  "createdAt": {
+    "$date": "2025-03-01T04:00:52.981Z"
+  },
+  "updatedAt": {
+    "$date": "2025-03-01T04:00:52.981Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67c2867cbfd9027bf7ecac63"
+  },
+  "name": "Zona Industrial",
+  "impactLevel": "Medio",
+  "yearsOfExperience": 1984,
+  "category": "Industrial",
+  "status": true,
+  "createdAt": {
+    "$date": "2025-03-01T04:01:00.116Z"
+  },
+  "updatedAt": {
+    "$date": "2025-03-01T04:01:00.116Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67c28683bfd9027bf7ecac67"
+  },
+  "name": "Grupo Roble",
+  "impactLevel": "Alto",
+  "yearsOfExperience": 1976,
+  "category": "Construcción/Inmobiliaria",
+  "status": true,
+  "createdAt": {
+    "$date": "2025-03-01T04:01:07.932Z"
+  },
+  "updatedAt": {
+    "$date": "2025-03-01T04:01:07.932Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67c2868cbfd9027bf7ecac6b"
+  },
+  "name": "Banrural",
+  "impactLevel": "Alto",
+  "yearsOfExperience": 1967,
+  "category": "Finanzas",
+  "status": true,
+  "createdAt": {
+    "$date": "2025-03-01T04:01:16.717Z"
+  },
+  "updatedAt": {
+    "$date": "2025-03-01T04:01:16.717Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67c28695bfd9027bf7ecac6f"
+  },
+  "name": "Claro Guatemala",
+  "impactLevel": "Alto",
+  "yearsOfExperience": 1978,
+  "category": "Telecomunicaciones",
+  "status": true,
+  "createdAt": {
+    "$date": "2025-03-01T04:01:25.919Z"
+  },
+  "updatedAt": {
+    "$date": "2025-03-01T04:01:25.919Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67c2869ebfd9027bf7ecac73"
+  },
+  "name": "Cementos del Norte",
+  "impactLevel": "Medio",
+  "yearsOfExperience": 1985,
+  "category": "Construcción",
+  "status": true,
+  "createdAt": {
+    "$date": "2025-03-01T04:01:34.602Z"
+  },
+  "updatedAt": {
+    "$date": "2025-03-01T04:01:34.602Z"
+  },
+  "__v": 0
+}]

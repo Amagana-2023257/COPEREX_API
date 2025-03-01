@@ -1,7 +1,7 @@
 {
 	"info": {
-		"_postman_id": "fe68e07e-0a13-4d36-8a36-2af3c1591125",
-		"name": "COPEREX - API",
+		"_postman_id": "a7b84645-9220-4832-abbc-d119492506ac",
+		"name": "COPEREX - API Copy",
 		"description": "API para gestión de empresas en la feria Interfer",
 		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
 		"_exporter_id": "31878676"
@@ -16,7 +16,7 @@
 						"auth": {
 							"type": "bearer",
 							"bearer": {
-								"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2JkZGJhMTAyMTU5Nzg4ZDgwNTk1MWQiLCJpYXQiOjE3NDA1ODEyMTgsImV4cCI6MTc0MDU4NDgxOH0.GsHhzwf99h9lf7Awmt1iO8N1eYQ0djQnj-C4x0pRrw4"
+								"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2JkZGJhMTAyMTU5Nzg4ZDgwNTk1MWQiLCJpYXQiOjE3NDA4MDA1ODIsImV4cCI6MTc0MDgwNDE4Mn0.eUNmUi18QJk32G9J4gE-J7P5AQ6wFibut7d-Gx3wCd8"
 							}
 						},
 						"method": "POST",
@@ -26,17 +26,17 @@
 							"formdata": [
 								{
 									"key": "name",
-									"value": "Angel",
+									"value": "Angeltest",
 									"type": "text"
 								},
 								{
 									"key": "username",
-									"value": "magaña",
+									"value": "magañatet",
 									"type": "text"
 								},
 								{
 									"key": "email",
-									"value": "admin@coperex.com",
+									"value": "admintest@coperex.com",
 									"type": "text"
 								},
 								{
@@ -84,7 +84,7 @@
 						"auth": {
 							"type": "bearer",
 							"bearer": {
-								"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2JkZGJhMTAyMTU5Nzg4ZDgwNTk1MWQiLCJpYXQiOjE3NDA1ODEyMTgsImV4cCI6MTc0MDU4NDgxOH0.GsHhzwf99h9lf7Awmt1iO8N1eYQ0djQnj-C4x0pRrw4"
+								"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2JkZGJhMTAyMTU5Nzg4ZDgwNTk1MWQiLCJpYXQiOjE3NDA4MDA1ODIsImV4cCI6MTc0MDgwNDE4Mn0.eUNmUi18QJk32G9J4gE-J7P5AQ6wFibut7d-Gx3wCd8"
 							}
 						},
 						"method": "GET",
@@ -96,7 +96,7 @@
 							}
 						],
 						"url": {
-							"raw": "http://localhost:3000/coperex/v1/company/companies?filter={\"category\":\"AAAA\"}",
+							"raw": "http://localhost:3000/coperex/v1/company/companies",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -111,16 +111,17 @@
 							"query": [
 								{
 									"key": "filter",
-									"value": "{\"category\":\"AAAA\"}"
-								},
-								{
-									"key": "sort",
-									"value": "-name",
+									"value": "{\"category\":\"AAAA\"}",
 									"disabled": true
 								},
 								{
 									"key": "sort",
-									"value": "impactLevel",
+									"value": "name",
+									"disabled": true
+								},
+								{
+									"key": "sort",
+									"value": "-impactLevel",
 									"disabled": true
 								}
 							]
@@ -134,7 +135,7 @@
 						"auth": {
 							"type": "bearer",
 							"bearer": {
-								"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2JkZGJhMTAyMTU5Nzg4ZDgwNTk1MWQiLCJpYXQiOjE3NDA1ODEyMTgsImV4cCI6MTc0MDU4NDgxOH0.GsHhzwf99h9lf7Awmt1iO8N1eYQ0djQnj-C4x0pRrw4"
+								"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2JkZGJhMTAyMTU5Nzg4ZDgwNTk1MWQiLCJpYXQiOjE3NDA4MDA1ODIsImV4cCI6MTc0MDgwNDE4Mn0.eUNmUi18QJk32G9J4gE-J7P5AQ6wFibut7d-Gx3wCd8"
 							}
 						},
 						"method": "GET",
@@ -180,14 +181,14 @@
 						"auth": {
 							"type": "bearer",
 							"bearer": {
-								"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2JkZGJhMTAyMTU5Nzg4ZDgwNTk1MWQiLCJpYXQiOjE3NDA1NDYyMjMsImV4cCI6MTc0MDU0OTgyM30.U9cIcOfw-DtXanfQW8zQLKEDaAI-hM8oTccDgk4OCU4"
+								"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2JkZGJhMTAyMTU5Nzg4ZDgwNTk1MWQiLCJpYXQiOjE3NDA4MDEwNjQsImV4cCI6MTc0MDgwNDY2NH0.z62u85H9cAwyCnHnFoNyfrLeHLWuczq_NtnFhNS2sxs"
 							}
 						},
 						"method": "POST",
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"name\": \"EEEE\",\r\n  \"impactLevel\": \"Bajo\",\r\n  \"yearsOfExperience\": 1999,\r\n  \"category\": \"EEE\"\r\n}",
+							"raw": " {\r\n    \"name\": \"Cementos del Norte\",\r\n    \"impactLevel\": \"Medio\",\r\n    \"yearsOfExperience\": 1985,\r\n    \"category\": \"Construcción\"\r\n  }",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -204,7 +205,7 @@
 						"auth": {
 							"type": "bearer",
 							"bearer": {
-								"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2JkZGJhMTAyMTU5Nzg4ZDgwNTk1MWQiLCJpYXQiOjE3NDA1NDYyMjMsImV4cCI6MTc0MDU0OTgyM30.U9cIcOfw-DtXanfQW8zQLKEDaAI-hM8oTccDgk4OCU4"
+								"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2JkZGJhMTAyMTU5Nzg4ZDgwNTk1MWQiLCJpYXQiOjE3NDA4MDA1ODIsImV4cCI6MTc0MDgwNDE4Mn0.eUNmUi18QJk32G9J4gE-J7P5AQ6wFibut7d-Gx3wCd8"
 							}
 						},
 						"method": "GET",
@@ -215,7 +216,38 @@
 								"type": "text"
 							}
 						],
-						"url": "http://localhost:3000/coperex/v1/company/companies/report"
+						"url": {
+							"raw": "http://localhost:3000/coperex/v1/company/companies/report",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"coperex",
+								"v1",
+								"company",
+								"companies",
+								"report"
+							],
+							"query": [
+								{
+									"key": "sort",
+									"value": "-name",
+									"disabled": true
+								},
+								{
+									"key": "filter",
+									"value": "{\"category\":\"AAAA\"}",
+									"disabled": true
+								},
+								{
+									"key": "sort",
+									"value": "-impactLevel",
+									"disabled": true
+								}
+							]
+						}
 					},
 					"response": []
 				}
